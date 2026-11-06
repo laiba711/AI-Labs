@@ -26,7 +26,7 @@ No, the same board size does not always produce the same result because each run
 - **How many restarts were needed to find a solution?** Typically between 1 to 15 restarts for $N = 8$, though it varies per run.
 - **Did any random-restart experiment reach its restart limit without finding a solution?** If `max_restarts` is set too low, it might occasionally fail, but with a reasonable limit (like 100), it almost always finds a valid solution.
 - **Why can Random-Restart improve the probability of success without guaranteeing success within a fixed number of attempts?** Each restart is an independent trial with a non-zero probability ($p > 0$) of success. While more trials decrease the overall cumulative probability of failure, no finite number of attempts can mathematically guarantee success if unlucky random states are continuously chosen.
-### 17. Lab Questions
+# 17. Lab Questions
 
 ### **Question 1: What is the purpose of the evaluation function in Hill-Climbing?**
 * **Answer:** The evaluation function assigns a numerical score to every state to measure how close it is to the goal. It allows the algorithm to compare the current state with its neighbors and greedily choose the one that maximizes the score.
